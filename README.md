@@ -15,13 +15,10 @@ This script allows you to automatically cycle through different GitHub status me
 import time
 from github import Github
 
-# Replace with your GitHub token
 GITHUB_TOKEN = 'your_github_token_here'
 
-# Initialize GitHub instance
 g = Github(GITHUB_TOKEN)
 
-# List of statuses to cycle through
 statuses = ["Status 1", "Status 2", "Status 3"]
 
 def update_status(status):
@@ -33,3 +30,9 @@ while True:
     for status in statuses:
         update_status(status)
         time.sleep(120)  # Wait for 2 minutes
+```
+###	**important**
+
+**Dont** forget to install pyGithub with
+```python
+pip install PyGithub
