@@ -5,10 +5,10 @@ This script allows you to automatically cycle through different GitHub status me
 ### 🛠️ **How it Works**
 
 1. **GitHub Token**: The script authenticates using your personal GitHub token, which gives it access to edit your profile information.
-2. **Status Cycle**: The script cycles through a list of predefined statuses (`"Free Malone"`, `"Carti drop please"`, and `"RIP kingvon"`) and updates your profile bio accordingly.
+2. **Status Cycle**: The script cycles through a list of predefined statuses (`"Status 1"`, `"Status 2"`, and `"Status 3"`) and updates your profile bio accordingly.
 3. **Time Delay**: The status is updated every 2 minutes, creating a continuous loop of fun messages.
 
---
+---
 ###  **Code Overview**
 
 ```python
@@ -22,7 +22,7 @@ GITHUB_TOKEN = 'your_github_token_here'
 g = Github(GITHUB_TOKEN)
 
 # List of statuses to cycle through
-statuses = ["Free Malone", "Carti drop please", "RIP kingvon"]
+statuses = ["Status 1", "Status 2", "Status 3"]
 
 def update_status(status):
     user = g.get_user()
