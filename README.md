@@ -33,6 +33,6 @@ while True:
 ```
 ###	**important**
 
-**Dont** forget to install pyGithub with
+**Dont forget to install pyGithub with**
 ```python
 pip install PyGithub
